@@ -49,7 +49,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3306:3306"
+      - "33060:3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
     environment:
