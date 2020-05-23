@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/users', 'HomeController@users');
-Route::get('/user', 'HomeController@users');
+Route::get('/users/{user}', 'HomeController@user');
 Route::get('/cache', 'HomeController@cache');

@@ -17,9 +17,9 @@ class HomeController extends Controller
         return User::take(10)->get();
     }
 
-    public function user()
+    public function user(User $user)
     {
-        return User::first();
+        return $user;
     }
 
     public function cache(){
